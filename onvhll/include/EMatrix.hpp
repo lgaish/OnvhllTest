@@ -1,7 +1,7 @@
 #ifndef EMATRIX_HPP
 #define EMATRIX_HPP
 
-#include "leader_zero.h"
+#include "leader_zero.hpp"
 #include "xxhash32.h"
 #include "MurmurHash3.h"
 #include "Histogram.hpp"

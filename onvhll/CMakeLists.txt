@@ -23,10 +23,8 @@ install(FILES
 		include/AccessStatics.hpp
     include/EMatrix.hpp
     include/Histogram.hpp
-    include/leader_zero.h
     include/leader_zero.cpp
     include/On_vHLL.hpp
     include/TwoTupleSketch.h
-    include/xxhash32.h
     include/CardinalityMap.hpp
   DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/DataSketches")

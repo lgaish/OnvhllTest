@@ -1,0 +1,46 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"filters/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/DataSketches",
+			"paths" : 
+			[
+				"filters/include/bloom_filter.hpp",
+				"filters/include/bloom_filter_impl.hpp",
+				"filters/include/bloom_filter_builder_impl.hpp",
+				"filters/include/bit_array_ops.hpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "filters",
+		"source" : "filters"
+	}
+}

@@ -1,0 +1,47 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"req/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/DataSketches",
+			"paths" : 
+			[
+				"req/include/req_common.hpp",
+				"req/include/req_sketch.hpp",
+				"req/include/req_sketch_impl.hpp",
+				"req/include/req_compactor.hpp",
+				"req/include/req_compactor_impl.hpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "req",
+		"source" : "req"
+	}
+}

@@ -1,0 +1,736 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						4,
+						6,
+						8,
+						10,
+						12,
+						14,
+						16,
+						18,
+						20,
+						22,
+						24,
+						26,
+						28,
+						30
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-ddf4559d903a9c2ce9ad.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "common",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-common-Debug-09ab3f2dab213b3bb6ea.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "common"
+				},
+				{
+					"build" : "common/test",
+					"childIndexes" : 
+					[
+						3
+					],
+					"jsonFile" : "directory-common.test-Debug-5385f33a67604c74434d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "common/test",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						9
+					]
+				},
+				{
+					"build" : "_deps/catch2-build",
+					"jsonFile" : "directory-_deps.catch2-build-Debug-4591b301172a309ea9cd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "build/_deps/catch2-src"
+				},
+				{
+					"build" : "hll",
+					"childIndexes" : 
+					[
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-hll-Debug-e2ff9b7ce37cd8bc46b2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "hll"
+				},
+				{
+					"build" : "hll/test",
+					"jsonFile" : "directory-hll.test-Debug-8af5c87bea8858b9aa68.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "hll/test",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "cpc",
+					"childIndexes" : 
+					[
+						7
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-cpc-Debug-1b023048352f977a7106.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "cpc"
+				},
+				{
+					"build" : "cpc/test",
+					"jsonFile" : "directory-cpc.test-Debug-3400ce6870492830d3d4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 0,
+					"source" : "cpc/test",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "kll",
+					"childIndexes" : 
+					[
+						9
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-kll-Debug-5ad546df15895dfb9dea.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "kll"
+				},
+				{
+					"build" : "kll/test",
+					"jsonFile" : "directory-kll.test-Debug-81c75c87eae73b04c7a1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 0,
+					"source" : "kll/test",
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"build" : "fi",
+					"childIndexes" : 
+					[
+						11
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-fi-Debug-19b56ab6c4e1171d4f83.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "fi"
+				},
+				{
+					"build" : "fi/test",
+					"jsonFile" : "directory-fi.test-Debug-b0aa1e0fee7740d5e10a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 10,
+					"projectIndex" : 0,
+					"source" : "fi/test",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "theta",
+					"childIndexes" : 
+					[
+						13
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-theta-Debug-ebb71216b5121f85c6f9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "theta"
+				},
+				{
+					"build" : "theta/test",
+					"jsonFile" : "directory-theta.test-Debug-1c35fc37a8534f514374.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 12,
+					"projectIndex" : 0,
+					"source" : "theta/test",
+					"targetIndexes" : 
+					[
+						15
+					]
+				},
+				{
+					"build" : "sampling",
+					"childIndexes" : 
+					[
+						15
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-sampling-Debug-0eb850ca7ed928c308a1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "sampling"
+				},
+				{
+					"build" : "sampling/test",
+					"jsonFile" : "directory-sampling.test-Debug-d94ec621c5aa5dd5fd1f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 14,
+					"projectIndex" : 0,
+					"source" : "sampling/test",
+					"targetIndexes" : 
+					[
+						6,
+						17
+					]
+				},
+				{
+					"build" : "tuple",
+					"childIndexes" : 
+					[
+						17
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-tuple-Debug-97a1a3abcf6a0b176c3f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tuple"
+				},
+				{
+					"build" : "tuple/test",
+					"jsonFile" : "directory-tuple.test-Debug-f5092cd272f86057f60d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 16,
+					"projectIndex" : 0,
+					"source" : "tuple/test",
+					"targetIndexes" : 
+					[
+						16
+					]
+				},
+				{
+					"build" : "req",
+					"childIndexes" : 
+					[
+						19
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-req-Debug-fa873a332d986e579a18.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "req"
+				},
+				{
+					"build" : "req/test",
+					"jsonFile" : "directory-req.test-Debug-5c93a2194e44efc8af74.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 18,
+					"projectIndex" : 0,
+					"source" : "req/test",
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"build" : "quantiles",
+					"childIndexes" : 
+					[
+						21
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-quantiles-Debug-f68c85296f2e6d570781.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "quantiles"
+				},
+				{
+					"build" : "quantiles/test",
+					"jsonFile" : "directory-quantiles.test-Debug-83fb39c1c80a0e52b250.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 20,
+					"projectIndex" : 0,
+					"source" : "quantiles/test",
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"build" : "count",
+					"childIndexes" : 
+					[
+						23
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-count-Debug-42898ea51e054a9043d4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "count"
+				},
+				{
+					"build" : "count/test",
+					"jsonFile" : "directory-count.test-Debug-b2f96171e8ea36eec99a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 22,
+					"projectIndex" : 0,
+					"source" : "count/test",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "density",
+					"childIndexes" : 
+					[
+						25
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-density-Debug-4955d007b3262d0b9e8f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "density"
+				},
+				{
+					"build" : "density/test",
+					"jsonFile" : "directory-density.test-Debug-76624e68158263dde90e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 24,
+					"projectIndex" : 0,
+					"source" : "density/test",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "tdigest",
+					"childIndexes" : 
+					[
+						27
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-tdigest-Debug-87e83bf4fd9e020648e1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tdigest"
+				},
+				{
+					"build" : "tdigest/test",
+					"jsonFile" : "directory-tdigest.test-Debug-c9f47b56086c70939926.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 26,
+					"projectIndex" : 0,
+					"source" : "tdigest/test",
+					"targetIndexes" : 
+					[
+						14
+					]
+				},
+				{
+					"build" : "filters",
+					"childIndexes" : 
+					[
+						29
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-filters-Debug-8ed3c23d3ff68093642c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "filters"
+				},
+				{
+					"build" : "filters/test",
+					"jsonFile" : "directory-filters.test-Debug-d47cd896562bba16b590.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 28,
+					"projectIndex" : 0,
+					"source" : "filters/test",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "onvhll",
+					"childIndexes" : 
+					[
+						31
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-onvhll-Debug-c80dffd947454a835eaf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "onvhll"
+				},
+				{
+					"build" : "onvhll/test",
+					"jsonFile" : "directory-onvhll.test-Debug-aca08daa6107df75b98e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.0"
+					},
+					"parentIndex" : 30,
+					"projectIndex" : 0,
+					"source" : "onvhll/test",
+					"targetIndexes" : 
+					[
+						11
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31
+					],
+					"name" : "DataSketches",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "Catch2",
+					"parentIndex" : 0
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 29,
+					"id" : "bloom_filter_test::@e6cadcfd2b3924cd0604",
+					"jsonFile" : "target-bloom_filter_test-Debug-d8fa22c24c51bd55414b.json",
+					"name" : "bloom_filter_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "common_test::@64cb0f958755a3ad88fa",
+					"jsonFile" : "target-common_test-Debug-a0ade40c6586c07ed5e4.json",
+					"name" : "common_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "common_test_lib::@64cb0f958755a3ad88fa",
+					"jsonFile" : "target-common_test_lib-Debug-9411e691e6cf15cadb2c.json",
+					"name" : "common_test_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 23,
+					"id" : "count_min_test::@88e878596501d78efd64",
+					"jsonFile" : "target-count_min_test-Debug-7e87d1a6206f5626757e.json",
+					"name" : "count_min_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "cpc_test::@af1b2808f55a5c99dc75",
+					"jsonFile" : "target-cpc_test-Debug-9f29052965ff35bcfc9b.json",
+					"name" : "cpc_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 25,
+					"id" : "density_test::@b37ec0835e451e51efb5",
+					"jsonFile" : "target-density_test-Debug-112de52afcab3c4cb57e.json",
+					"name" : "density_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "ebpps_sampling_test::@f496dee21990333c5246",
+					"jsonFile" : "target-ebpps_sampling_test-Debug-e0390d50709ee3819a94.json",
+					"name" : "ebpps_sampling_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "fi_test::@4f65015a646aa3097264",
+					"jsonFile" : "target-fi_test-Debug-f506271143df8da2a658.json",
+					"name" : "fi_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "hll_test::@c7609678b6580a4c268e",
+					"jsonFile" : "target-hll_test-Debug-6e0619d9d5fa9edf4f19.json",
+					"name" : "hll_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "integration_test::@64cb0f958755a3ad88fa",
+					"jsonFile" : "target-integration_test-Debug-e16f1618c428c80014e1.json",
+					"name" : "integration_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "kll_test::@eb9a73f36b8592a9e5fb",
+					"jsonFile" : "target-kll_test-Debug-9724e57c518b57055e2a.json",
+					"name" : "kll_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 31,
+					"id" : "onvhll_test::@31f7bdf22c6cd639fec9",
+					"jsonFile" : "target-onvhll_test-Debug-df97314b6ccbf62b289e.json",
+					"name" : "onvhll_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 21,
+					"id" : "quantiles_test::@db666aedecbdc39cd86f",
+					"jsonFile" : "target-quantiles_test-Debug-26719ed25e8a3aad624a.json",
+					"name" : "quantiles_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 19,
+					"id" : "req_test::@57a5f5a5ae3503ccbf37",
+					"jsonFile" : "target-req_test-Debug-58a3b8399e5d85ee5d93.json",
+					"name" : "req_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 27,
+					"id" : "tdigest_test::@005eb2421b4c7df0ad31",
+					"jsonFile" : "target-tdigest_test-Debug-fcdcb78e64cc58da2632.json",
+					"name" : "tdigest_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "theta_test::@8fa85c44dcceadd630a7",
+					"jsonFile" : "target-theta_test-Debug-094dd353951520221799.json",
+					"name" : "theta_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "tuple_test::@9a59384df432d0f51ea6",
+					"jsonFile" : "target-tuple_test-Debug-bf9eb063eb0f7c478696.json",
+					"name" : "tuple_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "var_opt_sampling_test::@f496dee21990333c5246",
+					"jsonFile" : "target-var_opt_sampling_test-Debug-f49f56187a1b3c0010f0.json",
+					"name" : "var_opt_sampling_test",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Gitee/apache-datasketches-cpp/build",
+		"source" : "C:/Gitee/apache-datasketches-cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

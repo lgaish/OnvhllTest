@@ -50,4 +50,5 @@ install(FILES
 			include/quantiles_sorted_view.hpp
       include/serde.hpp
       include/xxhash64.h
+      include/xxhash32.h
   DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/DataSketches")
