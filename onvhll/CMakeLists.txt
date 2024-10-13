@@ -19,12 +19,6 @@ install(TARGETS onvhll
   EXPORT ${PROJECT_NAME}
 )
 
-install(FILES 
-		include/AccessStatics.hpp
-    include/EMatrix.hpp
-    include/Histogram.hpp
-    include/leader_zero.cpp
+install(FILES
     include/On_vHLL.hpp
-    include/TwoTupleSketch.h
-    include/CardinalityMap.hpp
   DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/DataSketches")
