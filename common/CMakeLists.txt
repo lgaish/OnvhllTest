@@ -51,4 +51,10 @@ install(FILES
       include/serde.hpp
       include/xxhash64.h
       include/xxhash32.h
+      include/AccessStatics.hpp
+      include/CardinalityMap.hpp
+      include/EMatrix.hpp
+      include/Histogram.hpp
+      include/MurmurHash3.h
+      include/TwoTupleSketch.h
   DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/DataSketches")
