@@ -39,7 +39,7 @@ install(FILES
 			include/common_defs.hpp
       include/conditional_back_inserter.hpp
       include/conditional_forward.hpp
-      include/count_zeros.hpp
+      include/count_zeros.hpp#include "frequent_items_sketch.hpp"
       include/inv_pow2_table.hpp
       include/kolmogorov_smirnov_impl.hpp
       include/kolmogorov_smirnov.hpp
@@ -57,4 +57,5 @@ install(FILES
       include/Histogram.hpp
       include/MurmurHash3.h
       include/TwoTupleSketch.h
+      include/leader_zero.hpp
   DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/DataSketches")
