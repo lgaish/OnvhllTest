@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/var_opt_sampling_test.dir/var_opt_sketch_test.cpp.o CMakeFiles/var_opt_sampling_test.dir/var_opt_union_test.cpp.o CMakeFiles/var_opt_sampling_test.dir/var_opt_allocation_test.cpp.o ../../common/test/CMakeFiles/common_test_lib.dir/catch_runner.cpp.o ../../common/test/CMakeFiles/common_test_lib.dir/test_allocator.cpp.o -o var_opt_sampling_test 

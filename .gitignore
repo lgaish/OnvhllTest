@@ -45,7 +45,7 @@ docs
 java
 
 # build
-*/build/*
+build
 
 # format
 .clangformat

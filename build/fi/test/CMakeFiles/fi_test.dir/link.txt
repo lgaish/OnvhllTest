@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/fi_test.dir/reverse_purge_hash_map_test.cpp.o CMakeFiles/fi_test.dir/frequent_items_sketch_test.cpp.o CMakeFiles/fi_test.dir/frequent_items_sketch_custom_type_test.cpp.o ../../common/test/CMakeFiles/common_test_lib.dir/catch_runner.cpp.o ../../common/test/CMakeFiles/common_test_lib.dir/test_allocator.cpp.o -o fi_test 

@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/onvhll_test.dir/test_onvhll.cpp.o ../../common/test/CMakeFiles/common_test_lib.dir/catch_runner.cpp.o ../../common/test/CMakeFiles/common_test_lib.dir/test_allocator.cpp.o -o onvhll_test 

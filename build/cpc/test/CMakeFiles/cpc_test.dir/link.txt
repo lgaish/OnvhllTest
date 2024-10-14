@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/cpc_test.dir/cpc_sketch_test.cpp.o CMakeFiles/cpc_test.dir/cpc_union_test.cpp.o CMakeFiles/cpc_test.dir/compression_test.cpp.o CMakeFiles/cpc_test.dir/cpc_sketch_allocation_test.cpp.o ../../common/test/CMakeFiles/common_test_lib.dir/catch_runner.cpp.o ../../common/test/CMakeFiles/common_test_lib.dir/test_allocator.cpp.o -o cpc_test 

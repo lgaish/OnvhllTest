@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/density_test.dir/density_sketch_test.cpp.o ../../common/test/CMakeFiles/common_test_lib.dir/catch_runner.cpp.o ../../common/test/CMakeFiles/common_test_lib.dir/test_allocator.cpp.o -o density_test 
