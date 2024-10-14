@@ -8,14 +8,17 @@ namespace datasketches {
 class TwoTupleSketch {
 public:
   /*old*/
-  // virtual bool offerFlow(const void* ptr_flow_id, uint64_t flow_id_len, const void* ptr_element_id, uint64_t element_id_len) =
-  // 0; virtual double decodeFlow(const void* ptr_flow_id, uint64_t flow_id_len) = 0;
+  // virtual bool offerFlow(const void* ptr_flow_id, uint64_t flow_id_len, const
+  // void* ptr_element_id, uint64_t element_id_len) = 0; virtual double
+  // decodeFlow(const void* ptr_flow_id, uint64_t flow_id_len) = 0;
 
   /*new*/
-  virtual bool update(const std::string &flow_id, const std::string &element_id) = 0;
-  virtual double get_estimate(const std::string &flow_id) = 0;
+  virtual bool update(const std::string &, const std::string &) = 0;
+  virtual bool update(const char *, uint64_t, const char *, uint64_t) = 0;
+  virtual double get_estimate(const std::string &) = 0;
+  virtual double get_estimate(const char *) = 0;
   virtual void resetSketch() = 0;
-  virtual void resetSeed(uint32_t new_seed) = 0;
+  virtual void resetSeed(uint32_t) = 0;
 };
 
 } // namespace datasketches
