@@ -14,11 +14,11 @@ public:
 
   /*new*/
   // virtual bool update(const std::string &, const std::string &);
-  virtual bool update(const char *, uint64_t, const char *, uint64_t);
+  virtual bool update(const char *, uint64_t, const char *, uint64_t) = 0;
   // virtual double get_estimate(const std::string &);
-  virtual double get_estimate(const char *, uint64_t);
-  virtual void resetSketch();
-  virtual void resetSeed(uint32_t);
+  virtual double get_estimate(const char *, uint64_t) = 0;
+  virtual void resetSketch() = 0;
+  virtual void resetSeed(uint32_t) = 0;
 };
 
 } // namespace datasketches
