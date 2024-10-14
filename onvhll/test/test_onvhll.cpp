@@ -14,7 +14,8 @@ static std::string testBinaryInputPath = TEST_BINARY_INPUT_PATH;
 static std::string testBinaryInputPath = "test/";
 #endif
 
-/// @brief 测试on_vhll算法，保存结果。true_card低于500的忽略,要求相对误差小于0.1。
+/// @brief
+/// 测试on_vhll算法，保存结果。true_card低于500的忽略,要求相对误差小于0.1。
 
 namespace datasketches {
 
@@ -31,7 +32,8 @@ const int LOWER_BOUND_FILTER = 500;
 TEST_CASE("on_vhll test", "on_vhll") {
   //数据路径
   std::string data_path = "../../../datasets/on_vhll/uniq/test.uniq";
-  std::string groundtruth_path = "../../../datasets/on_vhll/groundtruth/test.groundtruth";
+  std::string groundtruth_path =
+      "../../../datasets/on_vhll/groundtruth/test.groundtruth";
 
   //初始化
   uint32_t seed = 45;
@@ -60,15 +62,18 @@ TEST_CASE("on_vhll test", "on_vhll") {
     infs >> src_ip >> dst_ip;
     if (infs.eof())
       break;
-    sketch.update(src_ip, dst_ip);
+    sketch.update(src_ip.c_str(), src_ip.length(), dst_ip.c_str(),
+                  dst_ip.length());
   }
 
   auto now = std::chrono::system_clock::now();
   std::time_t now_time_t = std::chrono::system_clock::to_time_t(now);
   std::tm *local_time = std::localtime(&now_time_t);
   std::ostringstream result_filename;
-  result_filename << "result_" << (local_time->tm_year + 1900) << "_" << (local_time->tm_mon + 1) << "_" << local_time->tm_mday
-                  << "_" << local_time->tm_hour << "_" << local_time->tm_min << "_" << local_time->tm_sec << ".csv";
+  result_filename << "result_" << (local_time->tm_year + 1900) << "_"
+                  << (local_time->tm_mon + 1) << "_" << local_time->tm_mday
+                  << "_" << local_time->tm_hour << "_" << local_time->tm_min
+                  << "_" << local_time->tm_sec << ".csv";
   std::ofstream result(result_filename.str()); // result文件
   result << "src_ip,est_card,true_card,r_err\n";
 
@@ -78,10 +83,12 @@ TEST_CASE("on_vhll test", "on_vhll") {
       break;
     if (true_card < LOWER_BOUND_FILTER)
       continue;
-    est_card = sketch.get_estimate(src_ip);
+    est_card = (int)sketch.get_estimate(src_ip.c_str(), src_ip.length());
     r_err = get_r_error((double)true_card, est_card);
-    result << src_ip << "," << est_card << "," << true_card << "," << r_err << "\n";
-    INFO(src_ip << " => est_card:" << est_card << " true_card:" << true_card << " r_err:" << r_err);
+    result << src_ip << "," << (int)est_card << "," << true_card << "," << r_err
+           << "\n";
+    INFO(src_ip << " => est_card:" << (int)est_card
+                << " true_card:" << true_card << " r_err:" << r_err);
     REQUIRE(r_err < 0.1);
   }
 
