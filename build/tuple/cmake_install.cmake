@@ -1,8 +1,8 @@
-# Install script for directory: C:/Gitee/apache-datasketches-cpp/tuple
+# Install script for directory: /home/rui/datasketches/github/OnvhllTest/tuple
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/DataSketches")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -34,34 +39,34 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/msys64/mingw64/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Gitee/apache-datasketches-cpp/build/tuple/test/cmake_install.cmake")
+  include("/home/rui/datasketches/github/OnvhllTest/build/tuple/test/cmake_install.cmake")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/DataSketches" TYPE FILE FILES
-    "C:/Gitee/apache-datasketches-cpp/tuple/include/tuple_sketch.hpp"
-    "C:/Gitee/apache-datasketches-cpp/tuple/include/tuple_sketch_impl.hpp"
-    "C:/Gitee/apache-datasketches-cpp/tuple/include/tuple_union.hpp"
-    "C:/Gitee/apache-datasketches-cpp/tuple/include/tuple_union_impl.hpp"
-    "C:/Gitee/apache-datasketches-cpp/tuple/include/tuple_intersection.hpp"
-    "C:/Gitee/apache-datasketches-cpp/tuple/include/tuple_intersection_impl.hpp"
-    "C:/Gitee/apache-datasketches-cpp/tuple/include/tuple_a_not_b.hpp"
-    "C:/Gitee/apache-datasketches-cpp/tuple/include/tuple_a_not_b_impl.hpp"
-    "C:/Gitee/apache-datasketches-cpp/tuple/include/tuple_jaccard_similarity.hpp"
-    "C:/Gitee/apache-datasketches-cpp/tuple/include/array_of_doubles_sketch.hpp"
-    "C:/Gitee/apache-datasketches-cpp/tuple/include/array_tuple_sketch.hpp"
-    "C:/Gitee/apache-datasketches-cpp/tuple/include/array_tuple_sketch_impl.hpp"
-    "C:/Gitee/apache-datasketches-cpp/tuple/include/array_tuple_union.hpp"
-    "C:/Gitee/apache-datasketches-cpp/tuple/include/array_tuple_union_impl.hpp"
-    "C:/Gitee/apache-datasketches-cpp/tuple/include/array_tuple_intersection.hpp"
-    "C:/Gitee/apache-datasketches-cpp/tuple/include/array_tuple_intersection_impl.hpp"
-    "C:/Gitee/apache-datasketches-cpp/tuple/include/array_tuple_a_not_b.hpp"
-    "C:/Gitee/apache-datasketches-cpp/tuple/include/array_tuple_a_not_b_impl.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/tuple/include/tuple_sketch.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/tuple/include/tuple_sketch_impl.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/tuple/include/tuple_union.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/tuple/include/tuple_union_impl.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/tuple/include/tuple_intersection.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/tuple/include/tuple_intersection_impl.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/tuple/include/tuple_a_not_b.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/tuple/include/tuple_a_not_b_impl.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/tuple/include/tuple_jaccard_similarity.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/tuple/include/array_of_doubles_sketch.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/tuple/include/array_tuple_sketch.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/tuple/include/array_tuple_sketch_impl.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/tuple/include/array_tuple_union.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/tuple/include/array_tuple_union_impl.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/tuple/include/array_tuple_intersection.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/tuple/include/array_tuple_intersection_impl.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/tuple/include/array_tuple_a_not_b.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/tuple/include/array_tuple_a_not_b_impl.hpp"
     )
 endif()
 

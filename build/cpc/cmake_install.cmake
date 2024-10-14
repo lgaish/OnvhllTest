@@ -1,8 +1,8 @@
-# Install script for directory: C:/Gitee/apache-datasketches-cpp/cpc
+# Install script for directory: /home/rui/datasketches/github/OnvhllTest/cpc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/DataSketches")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -34,30 +39,30 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/msys64/mingw64/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Gitee/apache-datasketches-cpp/build/cpc/test/cmake_install.cmake")
+  include("/home/rui/datasketches/github/OnvhllTest/build/cpc/test/cmake_install.cmake")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/DataSketches" TYPE FILE FILES
-    "C:/Gitee/apache-datasketches-cpp/cpc/include/compression_data.hpp"
-    "C:/Gitee/apache-datasketches-cpp/cpc/include/cpc_common.hpp"
-    "C:/Gitee/apache-datasketches-cpp/cpc/include/cpc_compressor.hpp"
-    "C:/Gitee/apache-datasketches-cpp/cpc/include/cpc_compressor_impl.hpp"
-    "C:/Gitee/apache-datasketches-cpp/cpc/include/cpc_confidence.hpp"
-    "C:/Gitee/apache-datasketches-cpp/cpc/include/cpc_sketch.hpp"
-    "C:/Gitee/apache-datasketches-cpp/cpc/include/cpc_sketch_impl.hpp"
-    "C:/Gitee/apache-datasketches-cpp/cpc/include/cpc_union.hpp"
-    "C:/Gitee/apache-datasketches-cpp/cpc/include/cpc_union_impl.hpp"
-    "C:/Gitee/apache-datasketches-cpp/cpc/include/cpc_util.hpp"
-    "C:/Gitee/apache-datasketches-cpp/cpc/include/icon_estimator.hpp"
-    "C:/Gitee/apache-datasketches-cpp/cpc/include/kxp_byte_lookup.hpp"
-    "C:/Gitee/apache-datasketches-cpp/cpc/include/u32_table.hpp"
-    "C:/Gitee/apache-datasketches-cpp/cpc/include/u32_table_impl.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/cpc/include/compression_data.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/cpc/include/cpc_common.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/cpc/include/cpc_compressor.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/cpc/include/cpc_compressor_impl.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/cpc/include/cpc_confidence.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/cpc/include/cpc_sketch.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/cpc/include/cpc_sketch_impl.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/cpc/include/cpc_union.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/cpc/include/cpc_union_impl.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/cpc/include/cpc_util.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/cpc/include/icon_estimator.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/cpc/include/kxp_byte_lookup.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/cpc/include/u32_table.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/cpc/include/u32_table_impl.hpp"
     )
 endif()
 

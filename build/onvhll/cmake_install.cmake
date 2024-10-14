@@ -1,8 +1,8 @@
-# Install script for directory: C:/Gitee/apache-datasketches-cpp/onvhll
+# Install script for directory: /home/rui/datasketches/github/OnvhllTest/onvhll
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/DataSketches")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -34,23 +39,15 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/msys64/mingw64/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Gitee/apache-datasketches-cpp/build/onvhll/test/cmake_install.cmake")
+  include("/home/rui/datasketches/github/OnvhllTest/build/onvhll/test/cmake_install.cmake")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/DataSketches" TYPE FILE FILES
-    "C:/Gitee/apache-datasketches-cpp/onvhll/include/AccessStatics.hpp"
-    "C:/Gitee/apache-datasketches-cpp/onvhll/include/EMatrix.hpp"
-    "C:/Gitee/apache-datasketches-cpp/onvhll/include/Histogram.hpp"
-    "C:/Gitee/apache-datasketches-cpp/onvhll/include/leader_zero.cpp"
-    "C:/Gitee/apache-datasketches-cpp/onvhll/include/On_vHLL.hpp"
-    "C:/Gitee/apache-datasketches-cpp/onvhll/include/TwoTupleSketch.h"
-    "C:/Gitee/apache-datasketches-cpp/onvhll/include/CardinalityMap.hpp"
-    )
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/DataSketches" TYPE FILE FILES "/home/rui/datasketches/github/OnvhllTest/onvhll/include/On_vHLL.hpp")
 endif()
 

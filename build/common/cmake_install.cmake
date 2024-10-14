@@ -1,8 +1,8 @@
-# Install script for directory: C:/Gitee/apache-datasketches-cpp/common
+# Install script for directory: /home/rui/datasketches/github/OnvhllTest/common
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/DataSketches")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -34,35 +39,42 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/msys64/mingw64/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Gitee/apache-datasketches-cpp/build/common/test/cmake_install.cmake")
+  include("/home/rui/datasketches/github/OnvhllTest/build/common/test/cmake_install.cmake")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/DataSketches" TYPE FILE FILES
-    "C:/Gitee/apache-datasketches-cpp/build/common/include/version.hpp"
-    "C:/Gitee/apache-datasketches-cpp/common/include/binomial_bounds.hpp"
-    "C:/Gitee/apache-datasketches-cpp/common/include/bounds_binomial_proportions.hpp"
-    "C:/Gitee/apache-datasketches-cpp/common/include/ceiling_power_of_2.hpp"
-    "C:/Gitee/apache-datasketches-cpp/common/include/common_defs.hpp"
-    "C:/Gitee/apache-datasketches-cpp/common/include/conditional_back_inserter.hpp"
-    "C:/Gitee/apache-datasketches-cpp/common/include/conditional_forward.hpp"
-    "C:/Gitee/apache-datasketches-cpp/common/include/count_zeros.hpp"
-    "C:/Gitee/apache-datasketches-cpp/common/include/inv_pow2_table.hpp"
-    "C:/Gitee/apache-datasketches-cpp/common/include/kolmogorov_smirnov_impl.hpp"
-    "C:/Gitee/apache-datasketches-cpp/common/include/kolmogorov_smirnov.hpp"
-    "C:/Gitee/apache-datasketches-cpp/common/include/memory_operations.hpp"
-    "C:/Gitee/apache-datasketches-cpp/common/include/MurmurHash3.h"
-    "C:/Gitee/apache-datasketches-cpp/common/include/optional.hpp"
-    "C:/Gitee/apache-datasketches-cpp/common/include/quantiles_sorted_view_impl.hpp"
-    "C:/Gitee/apache-datasketches-cpp/common/include/quantiles_sorted_view.hpp"
-    "C:/Gitee/apache-datasketches-cpp/common/include/serde.hpp"
-    "C:/Gitee/apache-datasketches-cpp/common/include/xxhash64.h"
-    "C:/Gitee/apache-datasketches-cpp/common/include/xxhash32.h"
+    "/home/rui/datasketches/github/OnvhllTest/build/common/include/version.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/binomial_bounds.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/bounds_binomial_proportions.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/ceiling_power_of_2.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/common_defs.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/conditional_back_inserter.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/conditional_forward.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/count_zeros.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/inv_pow2_table.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/kolmogorov_smirnov_impl.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/kolmogorov_smirnov.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/memory_operations.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/MurmurHash3.h"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/optional.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/quantiles_sorted_view_impl.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/quantiles_sorted_view.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/serde.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/xxhash64.h"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/xxhash32.h"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/AccessStatics.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/CardinalityMap.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/EMatrix.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/Histogram.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/MurmurHash3.h"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/TwoTupleSketch.h"
+    "/home/rui/datasketches/github/OnvhllTest/common/include/leader_zero.hpp"
     )
 endif()
 

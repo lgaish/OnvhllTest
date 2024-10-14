@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: C:/Gitee/apache-datasketches-cpp
-# Build directory: C:/Gitee/apache-datasketches-cpp/build
+# Source directory: /home/rui/datasketches/github/OnvhllTest
+# Build directory: /home/rui/datasketches/github/OnvhllTest/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

@@ -1,8 +1,8 @@
 # CMake generated Testfile for 
-# Source directory: C:/Gitee/apache-datasketches-cpp/fi/test
-# Build directory: C:/Gitee/apache-datasketches-cpp/build/fi/test
+# Source directory: /home/rui/datasketches/github/OnvhllTest/fi/test
+# Build directory: /home/rui/datasketches/github/OnvhllTest/build/fi/test
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-add_test(fi_test "C:/Gitee/apache-datasketches-cpp/build/fi/test/fi_test.exe")
-set_tests_properties(fi_test PROPERTIES  _BACKTRACE_TRIPLES "C:/Gitee/apache-datasketches-cpp/fi/test/CMakeLists.txt;33;add_test;C:/Gitee/apache-datasketches-cpp/fi/test/CMakeLists.txt;0;")
+add_test(fi_test "/home/rui/datasketches/github/OnvhllTest/build/fi/test/fi_test")
+set_tests_properties(fi_test PROPERTIES  _BACKTRACE_TRIPLES "/home/rui/datasketches/github/OnvhllTest/fi/test/CMakeLists.txt;33;add_test;/home/rui/datasketches/github/OnvhllTest/fi/test/CMakeLists.txt;0;")

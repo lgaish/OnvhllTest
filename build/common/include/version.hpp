@@ -25,10 +25,10 @@ namespace datasketches {
 // the configured options and settings for DataSketches
 constexpr int VERSION_MAJOR {5};
 constexpr int VERSION_MINOR {2};
-constexpr int VERSION_PATCH {20240925};
-constexpr int VERSION_TWEAK {0335};
+constexpr int VERSION_PATCH {20241014};
+constexpr int VERSION_TWEAK {0318};
 
-constexpr auto VERSION_STR = "5.2.20240925.0335";
+constexpr auto VERSION_STR = "5.2.20241014.0318";
 constexpr auto SOURCE_URL = "https://github.com/apache/datasketches-cpp";
 
 }

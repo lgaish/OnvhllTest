@@ -1,8 +1,8 @@
-# Install script for directory: C:/Gitee/apache-datasketches-cpp/hll
+# Install script for directory: /home/rui/datasketches/github/OnvhllTest/hll
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/DataSketches")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -34,48 +39,48 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/msys64/mingw64/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Gitee/apache-datasketches-cpp/build/hll/test/cmake_install.cmake")
+  include("/home/rui/datasketches/github/OnvhllTest/build/hll/test/cmake_install.cmake")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/DataSketches" TYPE FILE FILES
-    "C:/Gitee/apache-datasketches-cpp/hll/include/hll.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/AuxHashMap.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/CompositeInterpolationXTable.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/hll.private.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/HllSketchImplFactory.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/CouponHashSet.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/CouponList.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/CubicInterpolation.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/HarmonicNumbers.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/Hll4Array.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/Hll6Array.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/Hll8Array.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/HllArray.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/HllSketchImpl.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/HllUtil.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/coupon_iterator.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/RelativeErrorTables.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/AuxHashMap-internal.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/CompositeInterpolationXTable-internal.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/CouponHashSet-internal.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/CouponList-internal.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/CubicInterpolation-internal.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/HarmonicNumbers-internal.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/Hll4Array-internal.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/Hll6Array-internal.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/Hll8Array-internal.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/HllArray-internal.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/HllSketch-internal.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/HllSketchImpl-internal.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/HllUnion-internal.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/coupon_iterator-internal.hpp"
-    "C:/Gitee/apache-datasketches-cpp/hll/include/RelativeErrorTables-internal.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/hll.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/AuxHashMap.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/CompositeInterpolationXTable.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/hll.private.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/HllSketchImplFactory.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/CouponHashSet.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/CouponList.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/CubicInterpolation.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/HarmonicNumbers.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/Hll4Array.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/Hll6Array.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/Hll8Array.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/HllArray.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/HllSketchImpl.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/HllUtil.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/coupon_iterator.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/RelativeErrorTables.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/AuxHashMap-internal.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/CompositeInterpolationXTable-internal.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/CouponHashSet-internal.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/CouponList-internal.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/CubicInterpolation-internal.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/HarmonicNumbers-internal.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/Hll4Array-internal.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/Hll6Array-internal.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/Hll8Array-internal.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/HllArray-internal.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/HllSketch-internal.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/HllSketchImpl-internal.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/HllUnion-internal.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/coupon_iterator-internal.hpp"
+    "/home/rui/datasketches/github/OnvhllTest/hll/include/RelativeErrorTables-internal.hpp"
     )
 endif()
 
