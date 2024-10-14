@@ -43,3 +43,9 @@ _*/
 
 docs
 java
+
+# build
+*/build/*
+
+# format
+.clangformat
