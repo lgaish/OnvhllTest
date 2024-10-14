@@ -23,8 +23,8 @@ public:
   std::uint64_t sketch_query_cnt;
   std::uint64_t hash_cnt;
 
-  std::string save_file_path;
-  Statistics(std::string save_file_path) {
+  const char *save_file_path;
+  Statistics(const char *save_file_path) {
     this->save_file_path = save_file_path;
     flow_cnt = 0;
     memory_access = 0;
